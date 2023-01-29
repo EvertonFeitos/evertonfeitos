@@ -1,5 +1,3 @@
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
 
 ## Olá, eu sou o Everton Feitosa, desenvolvedor front-end 👋
 - 🔭 Eu atualmente trabalho com desenvolvimento web front-end de sistemas web, sites institucionais e e-commerces
@@ -12,5 +10,7 @@
   
  ## Tecnologias já utilizadas em projetos
  <div style="display: inline_block"><br>
-    <i class="devicon-javascript-plain"></i>
+     <img align="center" alt="Everton-Js" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
 </div>
+
+          
