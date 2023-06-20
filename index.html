@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Porti</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+  <nav class="nav" id="navbar">
+    <div class="container-nav">
+      <div class="logo">
+        <a href="#">Feitos</a>
+      </div>
+      <div id="mainListDiv" class="main_list">
+        <ul class="navlinks">
+          <li><a href="#welcome-section">About</a></li>
+          <li><a href="#projects">Portfolio</a></li>
+        </ul>
+      </div>
+      <span class="navTrigger">
+        <i></i>
+        <i></i>
+        <i></i>
+      </span>
+    </div>
+  </nav>
+  <section id="welcome-section">
+    <div class="flex-container f-column">
+      <h1>Welcome my Portifolio</h1>
+      <h2>My name is Everton Feitosa and Im am Front-end developer.<br>Shared below some projects for know about my job.</h2>
+    </div>
+  </section>
+  <section id="projects">
+    <div class="flex-container">
+      <div class="flex-items card-1"><a href="https://evertonfeitos.github.io/Galleria/" target="_blank" class="card-1"></a></div>
+      <div class="flex-items card-1"><a href="https://evertonfeitos.github.io/Projeto-Bookread/" target="_blank"></a></div>
+      <div class="flex-items card-1"><a href="https://spacefire.com.br/loja/" target="_blank"></a></div>
+    </div>
+  </section>
+  <footer>
+    <div class="flex-container">
+      <a href="https://github.com/EvertonFeitos" target="_blank" id="profile-link"><i class="fa-brands fa-github fa-3x"></i></a></i>
+    </div>    
+  </footer>
+
+
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+  <script>
+    window.addEventListener('scroll', function () {
+      if (window.pageYOffset > 50) {
+        var nav = document.querySelector('.nav');
+        nav.classList.add('affix');
+        console.log("OK");
+      } else {
+        var nav = document.querySelector('.nav');
+        nav.classList.remove('affix');
+      }
+    });
+
+    // menu Humberguer
+
+    document.querySelectorAll('.navTrigger').forEach(function(element) {
+    element.addEventListener('click', function() {
+      this.classList.toggle('active');
+      console.log("Clicked menu");
+      var mainListDiv = document.getElementById("mainListDiv");
+      mainListDiv.classList.toggle("show_list");
+      mainListDiv.style.display = mainListDiv.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  </script>
+
+</body>
+
+</html>
